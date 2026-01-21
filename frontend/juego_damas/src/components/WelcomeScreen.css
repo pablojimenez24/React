@@ -1,0 +1,130 @@
+.welcome-screen {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #1a1a1a;
+    padding: 2rem;
+}
+
+.welcome-card {
+    background: #2a2a2a;
+    padding: 2.5rem;
+    border-radius: 8px;
+    border: 1px solid #404040;
+    max-width: 450px;
+    width: 100%;
+}
+
+.welcome-title {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+}
+
+.welcome-subtitle {
+    font-size: 1rem;
+    color: #aaa;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.player-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.player-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.player-indicator.red {
+    background: #ff6b6b;
+}
+
+.player-indicator.black {
+    background: #333;
+}
+
+.form-group input {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    border: 1px solid #404040;
+    border-radius: 4px;
+    background: #1a1a1a;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+}
+
+.form-group input::placeholder {
+    color: #666;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4a9eff;
+}
+
+.start-button {
+    margin-top: 0.8rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: #4a9eff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Inter', sans-serif;
+}
+
+.start-button:hover {
+    background: #3a8eef;
+}
+
+.welcome-info {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #404040;
+    text-align: center;
+}
+
+.welcome-info p {
+    color: #888;
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .welcome-card {
+        padding: 2rem;
+    }
+
+    .welcome-title {
+        font-size: 1.5rem;
+    }
+}

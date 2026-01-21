@@ -1,0 +1,42 @@
+.piece {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform 0.2s;
+  border: 3px solid;
+}
+
+.piece:hover {
+  transform: scale(1.05);
+}
+
+.piece-red {
+  background: #ff6b6b;
+  border-color: #c92a2a;
+}
+
+.piece-black {
+  background: #333;
+  border-color: #000;
+}
+
+.piece.queen {
+  border-color: #ffd700;
+}
+
+.crown {
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+  .crown {
+    font-size: 1.5rem;
+  }
+}
